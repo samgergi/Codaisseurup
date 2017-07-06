@@ -11,7 +11,6 @@ class CreateEvents < ActiveRecord::Migration[5.1]
       t.datetime :starts_at
       t.datetime :ends_at
       t.boolean :active
-      t.references :user, foreign_key: true
 
       t.timestamps
     end
