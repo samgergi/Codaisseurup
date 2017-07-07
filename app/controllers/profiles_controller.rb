@@ -18,6 +18,7 @@ class ProfilesController < ApplicationController
 
  def edit
  end
+
  def show
    @category = @event.categories
  end

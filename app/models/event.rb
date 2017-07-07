@@ -7,4 +7,5 @@ validates :starts_at, presence:true
 validates :ends_at, presence: true
 
 has_and_belongs_to_many :themes
+has_many :photos
 end

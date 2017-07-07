@@ -22,9 +22,15 @@
     <h4>Amenities</h4>
     <ul class="amenities">
       <li><%= !@event.includes_food ? ("<s>Food</s>").html_safe : "Food" %></li>
-      <li><%= !@event.includes_drinks ? ("<del>Drinks</del>").html_safe : "Drinks" %></li>
+      <li><%= !@event.includes_drink ? ("<del>Drinks</del>").html_safe : "Drinks" %></li>
 
     </ul>
+
+    <!-- Photos -->
+    <h4>Photos</h4>
+    <% @event.photos.each do |photo| %>
+      <%= image_tag photo.image %>
+    <% end %>
 
   </div>
 
